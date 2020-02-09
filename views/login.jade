@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    section.container
+        .row
+        .col-md-12
+    
+            form.form-signin
+                img.mb-4(src='#', alt='', width='72', height='72')
+                h1.h3.mb-3.font-weight-normal Sign in
+                label.sr-only(for='email') Email address
+                input#email.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                label.sr-only(for='inputPassword') Password
+                input#inputPassword.form-control(type='password', placeholder='Password', required='')
+                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign 
+        br
+          
+
