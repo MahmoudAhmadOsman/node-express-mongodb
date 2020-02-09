@@ -2,11 +2,13 @@ extends layout
 
 block content
     
-    section.container
-        .card(style='width:400px')
-            img.card-img-bottom(src='http://www.netsansoftware.com/images/mahmoud.jpg', alt='Mahmoud Osman', style='width:80ox; heigh:80px; border-radius:1%;')
+    section.container.about_me
+        .row
+          .col-md-6
+            .card(style='max-width:400px')
+                img.card-img-bottom(src='http://www.netsansoftware.com/images/mahmoud.jpg', alt='Mahmoud Osman')
 
-            .card-body
-                h4.card-title Mahmoud Osman
-                p.card-text I am a web developer
-                a.btn.btn-primary.btn-block(href='#') See My Profile!
+                .card-body
+                    h4.card-title Mahmoud Osman
+                    p.card-text I am a web developer Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, odit placeat! Ipsam repellat error dolores neque vitae, dignissimos veritatis voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia id voluptatibus quasi voluptate doloremque quis non voluptates nostrum quos quaerat.
+                    a.btn.btn-primary.btn-block(href='#') See My Profile!

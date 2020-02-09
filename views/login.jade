@@ -3,16 +3,15 @@ extends layout
 block content
     section.container
         .row
-        .col-md-12
-    
-            form.form-signin
-                img.mb-4(src='#', alt='', width='72', height='72')
-                h1.h3.mb-3.font-weight-normal Sign in
-                label.sr-only(for='email') Email address
-                input#email.form-control(type='email', placeholder='Email address', required='', autofocus='')
-                label.sr-only(for='inputPassword') Password
-                input#inputPassword.form-control(type='password', placeholder='Password', required='')
-                button.btn.btn-lg.btn-primary.btn-block(type='submit') Sign 
+            .col-md-12
+                form.form-signin
+                    img.mb-4(src='https://cdn4.iconfinder.com/data/icons/avatars-21/512/avatar-circle-human-male-3-512.png', alt='avatar image')
+                    h1.h3.mb-3.font-weight-normal Sign in
+                    label.sr-only(for='email') Email address
+                    input#email.form-control(type='email', placeholder='Email address', required='', autofocus='')
+                    label.sr-only(for='inputPassword') Password
+                    input#inputPassword.form-control(type='password', placeholder='Password', required='')
+                    button.btn.btn-outline-success.btn-lg(type='submit') Sign In
         br
           
 

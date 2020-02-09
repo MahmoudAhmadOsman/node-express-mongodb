@@ -27,12 +27,54 @@ a {
   height: 250px;
 }
 .about_me{
-  background-color: #00f;
+  position: relative;
+  display: block;
+  height: 350px;
+  background: #f9f9f9;
 }
+.about_me img{
+  width:80px; 
+  height:80px; 
+  border-radius:50%;
+  margin: auto;
+}
+.about_me .card{
+  margin-top: 40px;
+}
+
+
+
+
+
+/* Login section */
+
+.form-signin{
+  width: 600px;
+  margin: auto;
+  position: relative;
+  display: block;
+}
+.form-signin img {
+ 
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+.form-signin input{
+  margin-bottom: 8px;
+  width: 60%;
+}
+
+
+
+
+
+
 
 
 .footer{
   background: #002;
   color: #fff;
   padding: 5px;
+  display: none
 }

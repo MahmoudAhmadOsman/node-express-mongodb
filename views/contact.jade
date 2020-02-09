@@ -1,3 +1,17 @@
 extends layout
 
 block content
+   section.container
+    .row  
+      h1 Contact Me
+     .col.md-6
+        form
+            input#email.form-control(type='text', name='fname', placeholder='First name')
+            input#email.form-control(type='email', name='email', placeholder='Email address')
+            textarea#message.form-control.md-textarea(type='text', name='message', rows='8' , placeholder='Message')
+        button.btn.btn-outline-success.btn-lg Send Message
+
+
+
+
+
