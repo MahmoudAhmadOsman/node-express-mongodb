@@ -24,7 +24,8 @@ a {
 .home_page{
   background-color: #ccd;
   width: 100%;
-  height: 250px;
+  height: auto;
+  padding: 8px;
 }
 .about_me{
   position: relative;
@@ -41,6 +42,23 @@ a {
 .about_me .card{
   margin-top: 40px;
 }
+
+
+/* All Posts */
+.all-posts{
+  background-color: #dcdcd4;
+    padding: 1px 2px 2px 55px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
