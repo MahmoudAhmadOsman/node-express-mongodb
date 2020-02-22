@@ -3,6 +3,28 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+
+//Bring the database
+mongoose.connect('config/database');
+let mydb = mongoose.connection;
+
+//First, check database connection
+mydb.once('open', function(){
+  console.log('Connected to Mongo database');
+});
+
+// Check  dtabase errors
+mydb.on('error', function(err){
+  console.log(err);
+});
+
+// Now, bring in the models
+let posts = require('./models/post');
+
+
 
 
 // All Routers
@@ -27,6 +49,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+
+//Use, Body Parser and Middleware Here
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);

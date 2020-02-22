@@ -1,7 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   height: 1500px;
+  background-color: #fdfdfb;
 }
 
 a {
@@ -22,7 +35,7 @@ a {
 }
 
 .home_page{
-  background-color: #ccd;
+  background-color: #fff;
   width: 100%;
   height: auto;
   padding: 8px;
@@ -31,7 +44,7 @@ a {
   position: relative;
   display: block;
   height: 350px;
-  background: #f9f9f9;
+  background: #fff;
 }
 .about_me img{
   width:80px; 
@@ -41,13 +54,25 @@ a {
 }
 .about_me .card{
   margin-top: 40px;
+  display: block;
 }
-
+.about_me .card img{
+  max-width: 700px;
+  margin: auto;
+  display: block;
+}
+.about_me .card-title{
+  text-align: center;
+}
 
 /* All Posts */
 .all-posts{
-  background-color: #dcdcd4;
-    padding: 1px 2px 2px 55px;
+  width: auto;
+  height: auto;
+  display: block;
+  background-color: #fff;
+  padding: 1px 2px 2px 55px;
+  position: relative;
 }
 
 
@@ -85,7 +110,13 @@ a {
 
 
 
+/* Start of side bar */
+.side__bar{
 
+  height: 100vh;
+  position: relative;
+  background-color: #f7f5f5;
+}
 
 
 
