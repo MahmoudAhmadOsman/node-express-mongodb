@@ -1,25 +1,35 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
 var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 
 //Bring the database
-mongoose.connect('config.database');
-let mydb = mongoose.connection;
+// mongoose.connect('config.database');
+// let mydb = mongoose.connection;
+
+
 
 //First, check database connection
-mydb.once('open', function(){
-  console.log('Connected to Mongo database');
-});
+// mydb.once('open', function(){
+//   console.log('Connected to Mongo database');
+// });
 
 // Check  database errors
-mydb.on('error', function(err){
-  console.log(err);
-});
+// mydb.on('error', function(err){
+//   console.log(err);
+// });
+
+//Connect to the mongo database
+const db = 'mongodb://localhost/mymongodb';
+mongoose.connect(db);
+
+
+
+
 
 // Now, bring in, the 'Post' models
 let Post = require('./models/post');
@@ -28,11 +38,11 @@ let Post = require('./models/post');
 
 
 // All Routers
-var indexRouter = require('./routes/index');
-var aboutRouter = require('./routes/about');
-var contactRouter = require('./routes/contact');
-var loginRouter = require('./routes/login');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about');
+const contactRouter = require('./routes/contact');
+const loginRouter = require('./routes/login');
+const usersRouter = require('./routes/users');
 
 // All posts
 var postsRouter = require('./routes/posts');
@@ -55,6 +65,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Use, Body Parser and Middleware Here
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+
+// use body parser 2/22/2020
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 
 

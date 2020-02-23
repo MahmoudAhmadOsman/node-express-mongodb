@@ -7,28 +7,32 @@ var router = express.Router();
 // });
 
 
-router.get('/', function(req, res, next) {
-
+router.get('/', function(req, res, next){
   Post.find({}, function(err, posts){
     if(err){
-            console.log(err);
-          }else{
-           // console.log(posts);
-            res.render('index', {
-                      title:'Posts',
-                      posts: posts
-                      // or like this Allpostsn 
-                      //posts
-                    });
-          }
+      console.log(err);
+    } else {
+      res.render('index', {
+        title:'posts',
+        posts: posts
+      });
+    }
   });
-
-  res.render('index', {
-     title: 'Welcome to my page!' 
-    
-    });
 });
 
+
+// router.get('/', function(req, res) {
+//   console.log('All posts');
+//   Post.find({})
+//     .exec(function(err, posts) {
+//       if(err) {
+//         res.send('error occured')
+//       } else {
+//         console.log(posts);
+//         res.json(posts);
+//       }
+//     });
+// });
 
 
 module.exports = router;
