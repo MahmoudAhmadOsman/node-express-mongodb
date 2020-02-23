@@ -2,13 +2,11 @@ extends layout
 
 block content
   section.container
-
+    each post in posts
       .row
         .col-md-8.home_page
-          h1 #{title}
-          ul.list-group
-            
-      li.list-group-item
-         
-        .col-md-4.side__bar
-          h3 Sidebar
+          each post, i in posts
+            a(href="/posts/"+post._id)= post.title
+
+          .col-md-4.side__bar
+            h3 Sidebar

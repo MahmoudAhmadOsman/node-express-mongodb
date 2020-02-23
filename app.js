@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 
 
 //Bring the database
-mongoose.connect('config/database');
+mongoose.connect('config.database');
 let mydb = mongoose.connection;
 
 //First, check database connection
@@ -16,13 +16,13 @@ mydb.once('open', function(){
   console.log('Connected to Mongo database');
 });
 
-// Check  dtabase errors
+// Check  database errors
 mydb.on('error', function(err){
   console.log(err);
 });
 
-// Now, bring in the models
-let posts = require('./models/post');
+// Now, bring in, the 'Post' models
+let Post = require('./models/post');
 
 
 

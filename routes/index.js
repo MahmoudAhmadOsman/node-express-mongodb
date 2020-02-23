@@ -9,18 +9,24 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-  posts.find({}, function(err, Allposts){
+  Post.find({}, function(err, posts){
     if(err){
             console.log(err);
           }else{
+           // console.log(posts);
             res.render('index', {
                       title:'Posts',
-                      //Allposts: Allposts
+                      posts: posts
+                      // or like this Allpostsn 
+                      //posts
                     });
           }
   });
 
-  res.render('index', { title: 'Welcome to my page!' });
+  res.render('index', {
+     title: 'Welcome to my page!' 
+    
+    });
 });
 
 
