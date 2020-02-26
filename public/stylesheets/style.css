@@ -77,18 +77,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Login section */
 
 .form-signin{
@@ -125,5 +113,5 @@ a {
   background: #002;
   color: #fff;
   padding: 5px;
-  display: none
+  display: none;
 }
