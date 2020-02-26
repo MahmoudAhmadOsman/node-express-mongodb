@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* Get All posts [post index]  */
 
-router.get('/', function(req, res, next) {
+router.get('/posts', function(req, res, next) {
   res.render('posts',{
     title: 'Post One',
     author: 'Mahmoud Osman',
