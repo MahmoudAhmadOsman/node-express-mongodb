@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 
+// Now, bring in, the 'Post' models 2-25-20
+let Post = require('./models/post');
+
 //Bring the database
 // mongoose.connect('config.database');
 // let mydb = mongoose.connection;
@@ -24,8 +27,7 @@ const mongoose = require('mongoose');
 // });
 
 
-// Now, bring in, the 'Post' models 2-25-20
-let Post = require('./models/post');
+
 
 //Connect to the mongo database
 const db = 'mongodb://localhost/mymongodb';
