@@ -4,6 +4,7 @@ var router = express.Router();
 /* Get All posts [post index]  */
 
 router.get('/posts', function(req, res, next) {
+  Post.find({})
   res.render('posts',{
     title: 'Post One',
     author: 'Mahmoud Osman',
