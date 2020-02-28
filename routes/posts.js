@@ -4,7 +4,7 @@ var router = express.Router();
 /* Get All posts  */
 
 router.get('/posts', function(req, res, next) {
- contst Post =  Post.find({}) // Query posts from the database 
+ const Post =  Post.find({}) // Query posts from the database 
   res.render('posts',{
     title: 'Post One',
     author: 'Mahmoud Osman',
