@@ -5,10 +5,13 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
  //const Post =  Post.find({}) // Query posts from the database 
+
+
+
   res.render('posts',{
     title: 'Post One',
     author: 'Mahmoud Osman',
-    body: 'This is the main post body. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.'
+    body: 'This is the main post body.'
   });
 });
 module.exports = router;
