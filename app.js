@@ -41,6 +41,8 @@ const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const contactRouter = require('./routes/contact');
 const loginRouter = require('./routes/login');
+const productRouter = require('./routes/product');
+
 const usersRouter = require('./routes/users');
 
 // All posts
@@ -77,6 +79,7 @@ app.use(bodyParser.urlencoded({
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
+app.use('/product', productRouter);
 app.use('/login', loginRouter);
 app.use('/users', usersRouter);
 

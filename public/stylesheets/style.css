@@ -84,6 +84,7 @@ a {
   margin: auto;
   position: relative;
   display: block;
+  margin-top: 80px;
 }
 .form-signin img {
  
@@ -104,6 +105,22 @@ a {
   height: 100vh;
   position: relative;
   background-color: #f7f5f5;
+}
+
+
+
+/*Contact Me*/
+#contact_me{
+  margin-top: 60px;
+}
+
+
+
+
+
+/*All products*/
+.product h1{
+  margin-top: 60px;
 }
 
 
