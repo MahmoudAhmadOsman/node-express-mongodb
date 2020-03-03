@@ -45,6 +45,7 @@ a {
   display: block;
   height: 350px;
   background: #fff;
+  margin-top: 60px;
 }
 .about_me img{
   width:80px; 
@@ -53,8 +54,10 @@ a {
   margin: auto;
 }
 .about_me .card{
-  margin-top: 40px;
-  display: block;
+  margin-top: 60px;
+    display: block;
+    max-width: 600px;
+    margin: auto;
 }
 .about_me .card img{
   max-width: 700px;
@@ -62,7 +65,7 @@ a {
   display: block;
 }
 .about_me .card-title{
-  text-align: center;
+  text-align: left;
 }
 
 /* All Posts */
