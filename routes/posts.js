@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
   res.render('posts',{
     title: 'Post One',
     author: 'Mahmoud Osman',
-    body: 'This is the main post body.'
+    body: 'Lorem ipsum is placeholder text commonly used in the graphic.'
   });
 });
 module.exports = router;

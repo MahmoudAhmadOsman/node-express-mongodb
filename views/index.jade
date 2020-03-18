@@ -1,8 +1,22 @@
+
 extends layout
 
-block content
-  section.container
-      .row
-        .col-md-8.home_page
-          .col-md-4.side__bar
-            h3 Sidebar
+block content	
+  section.container.main_content
+      .row 
+        .col-md-4
+          a(href='https://google.com', target='_blank')
+           img.card-img-top(src='https://placeimg.com/640/480/tech/27411', alt='Express js')
+           h4 Express JS
+        .col-md-4
+          a(href='https://google.com', target='_blank')
+           img.card-img-top(src='https://placeimg.com/640/480/tech/29411', alt='Node js')
+           h4 Node JS
+        .col-md-4
+          a(href='https://google.com', target='_blank')
+           img.card-img-top(src='https://placeimg.com/640/480/tech/48335', alt='React js')
+           h4 React JS
+
+
+
+

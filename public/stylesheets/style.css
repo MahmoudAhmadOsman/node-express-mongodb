@@ -39,7 +39,14 @@ a {
   width: 100%;
   height: auto;
   padding: 8px;
+  margin-top: 50px;
 }
+
+.main_content {
+  margin-top: 60px;
+}
+
+
 .about_me{
   position: relative;
   display: block;
